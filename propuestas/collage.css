@@ -1,0 +1,268 @@
+/* Production collage layers. Paper edges and printed number are raster assets. */
+.refined{background:#eee2ca}.refined main{overflow:visible;max-width:1600px}.refined{overflow-x:clip}
+.refined header{position:relative;height:150px;padding:20px 4%;align-items:flex-start;z-index:3;pointer-events:none}.refined header a{pointer-events:auto}.refined header span{padding-top:15px}
+.refined .hero{height:auto;aspect-ratio:4240/2384;margin-top:calc(-100vw * .13);background:transparent;z-index:1;isolation:isolate}
+.refined .hero>img{object-fit:fill;object-position:center;mask-image:url('assets/sombrero-mascara.png');mask-size:100% 100%;mask-repeat:no-repeat;-webkit-mask-image:url('assets/sombrero-mascara.png');-webkit-mask-size:100% 100%}
+.refined .hero:after{inset:45% 0 0;background:linear-gradient(transparent,#0009)}
+.refined .hero>div{bottom:10%;left:4%}.refined .hero h1{font-family:Georgia,serif;font-weight:700;font-size:clamp(76px,10.5vw,162px);line-height:.83;letter-spacing:-.055em}.refined .hero .subtitle{font-size:clamp(25px,3.2vw,45px)}.refined .hero .margin-note{top:32%;right:5%}
+.refined .campaign{background:transparent;box-shadow:none;margin-top:-25px;padding:58px 8% 65px;min-height:310px;z-index:4;isolation:isolate}
+.refined .campaign:before,.refined .campaign:after,.refined .fund:before,.refined .fund:after{display:none;content:none;clip-path:none}
+.refined .campaign img.paper-asset{position:absolute;inset:-35px 0;width:100%;height:calc(100% + 70px);object-fit:fill;filter:none;z-index:-1;pointer-events:none}
+.refined .campaign img:not(.paper-asset){position:absolute;width:43%;height:auto;right:-6%;top:-130px;filter:none;z-index:2;transform:rotate(8deg);pointer-events:none}
+.refined .campaign>div{max-width:65%;padding-left:4%}.refined .campaign h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(48px,5.6vw,86px);font-weight:700;line-height:.94;color:#24231c}.refined .campaign h2 em{color:#a43d26;font-weight:700}.refined .campaign .cta{background:#254031;color:#f5ead4;border:0;font-size:23px;letter-spacing:.12em;min-width:270px;text-align:center}.refined .campaign-note{left:48%;bottom:30px;font-size:13px;z-index:3}
+.refined .chapter-one{padding-top:100px}.refined .editorial figure{transform:none;box-shadow:none;background:none;padding:0}.refined .editorial figcaption{padding-inline:0}
+.refined .community{background:#eddfc4}.refined .community-copy{background-image:url('assets/papel-rasgado.png');background-size:150% 140%;background-position:center;box-shadow:none;gap:30px;padding:45px 6%}.refined .number-block{transform:none;flex:0 0 43%;align-self:center}.refined .number-block>p{font-size:26px;padding-left:8px;margin-bottom:5px}.refined .community .number-asset{display:block;width:100%;height:auto;min-height:0;object-fit:contain}.refined .community-copy>div:last-child{flex:1;min-width:0}.refined .community-copy h2{font:27px/1.15 'Courier Prime',monospace;letter-spacing:0}.refined .community-copy .eyebrow{display:none}.refined .community-copy .reveal summary{font-size:19px}.refined .community-copy .reveal>p{font-size:14px}
+.refined .hug h2{font-family:Georgia,serif;font-weight:500;letter-spacing:-.045em}.refined .hug{position:relative}.refined .gallery{background-image:url('assets/papel-rasgado.png');background-position:center;background-size:130% 140%}
+.refined .fund{position:relative;background:transparent;color:#f7e9d1;padding:62px 5% 70px 32%;margin-top:80px;min-height:410px;grid-template-columns:1fr 1.2fr;gap:20px 35px;isolation:isolate;align-items:start}
+.refined .fund-paper{position:absolute;inset:-40px 0;width:100%;height:calc(100% + 80px);object-fit:fill;z-index:-2;pointer-events:none}
+.refined .fund-cow{position:absolute;width:43%;height:auto;left:-14%;top:-110px;transform:rotate(-13deg);z-index:-1;pointer-events:none}
+.refined .fund-title{grid-column:1/-1}.refined .fund h2{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:clamp(44px,4.4vw,68px);letter-spacing:-.01em;line-height:.95}.refined .fund h2 br{display:none}.refined .fund-title .eyebrow{margin:18px 0 0;font-size:12px}.refined .funding summary{font-size:19px;border:0;padding:9px 0}.refined .fund .actions{grid-column:auto;max-width:none;width:100%;padding:0;background:none;color:#f4e6ca;box-shadow:none;transform:none;align-self:center;gap:22px}
+.refined .fund .cta{display:block;width:100%;padding:20px 12px;background:#f2e4c8 url('assets/papel-rasgado.png') center/130% 150%;color:#92361f;font:700 clamp(25px,2.5vw,40px)/1 Georgia,serif;letter-spacing:.04em;text-align:center;white-space:nowrap;transform:none;border:0}
+.refined .fund .cta:hover{background-color:#fff1d6;color:#62230f}.refined .fund .secondary{color:#f7e9d1;border:1px solid #f7e9d1;font-size:17px;padding:15px 7px;letter-spacing:.04em}
+.refined .closing{color:#29291f;background:transparent;padding-top:80px}.refined .music-photo{transform:none}
+@media(min-width:1600px){.refined .hero{margin-top:-208px}}
+@media(max-width:1100px){.refined .community-copy{flex-direction:row;align-items:center;gap:22px}.refined .number-block{flex-basis:42%}.refined .community-copy h2{font-size:22px}.refined .campaign img:not(.paper-asset){top:-100px}.refined .fund{padding-left:29%;gap:20px}.refined .fund .cta{font-size:27px}.refined .fund .secondary{font-size:14px}.refined .fund-cow{top:-55px}.refined .funding summary{font-size:17px}}
+@media(max-width:751px){.refined header{height:130px;padding-top:14px}.refined header img{height:72px;width:55px}.refined header span{font-size:10px}.refined .hero{height:490px;aspect-ratio:auto;margin-top:-105px}.refined .hero>img{object-fit:cover;object-position:36% center;mask-size:auto 100%;mask-position:36% center;-webkit-mask-size:auto 100%;-webkit-mask-position:36% center}.refined .hero>div{bottom:42px;left:6%}.refined .hero h1{font-size:77px}.refined .hero .subtitle{font-size:22px}.refined .hero .margin-note{top:31%;font-size:10px;right:5%}.refined .hero-meta{font-size:10px}.refined .campaign{padding:38px 6% 45px;min-height:255px;margin-top:-10px}.refined .campaign>div{max-width:72%;padding-left:0}.refined .campaign h2{font-size:38px}.refined .campaign img:not(.paper-asset){width:64%;right:-26%;top:-65px}.refined .campaign .cta{font-size:17px;min-width:0;padding:13px 18px}.refined .campaign img.paper-asset{inset:-20px 0;height:calc(100% + 40px)}.refined .chapter-one{padding-top:65px}.refined .community-copy{padding:28px 6%;gap:25px}.refined .number-block{flex-basis:40%}.refined .number-block>p{font-size:22px;padding-left:4px}.refined .community-copy h2{font-size:22px}.refined .community-copy .reveal summary{font-size:17px}.refined .fund{padding:175px 6% 55px;margin-top:75px;grid-template-columns:1fr;gap:25px}.refined .fund-title{grid-column:auto;padding-left:33%;min-height:65px}.refined .fund h2{font-size:40px}.refined .fund h2 br{display:block}.refined .fund-title .eyebrow{display:none}.refined .fund-cow{width:75%;left:-24%;top:-75px}.refined .fund-paper{inset:-25px 0;height:calc(100% + 50px)}.refined .funding summary{font-size:20px;border-top:1px solid #f1e6ce33}.refined .fund .cta{font-size:32px;padding:22px 12px}.refined .fund .secondary{font-size:18px}.refined .closing{font-size:20px}.refined .funding{display:block}}
+
+.refined main{overflow-x:clip;overflow-y:visible}
+
+@media(max-width:751px){.refined .fund-paper{inset:-80px 0;height:calc(100% + 160px);object-fit:cover;object-position:center}.refined .campaign img.paper-asset{object-fit:cover;object-position:center}}
+/* Composition resserrée et objets de cuisine découpés. */
+.refined .editorial{position:relative;padding:48px 7%;gap:6%}.refined .editorial h2{font-size:clamp(44px,5vw,74px);margin-bottom:24px}.refined .editorial figure img{height:440px}.refined .chapter-one{padding-top:48px}.refined .formation{padding-block:45px}.refined .future{padding-block:45px}.refined .hug>img:not(.collage-deco){height:480px}.refined .hug>div{padding:42px 12% 42px 8%}.refined .hug h2{font-size:clamp(34px,3.5vw,52px);margin-bottom:22px}.refined .gallery{padding-block:38px}.refined .strips{height:365px}.refined .fund{margin-top:40px}.refined .closing{padding-block:48px 30px}
+.refined .collage-deco{position:absolute!important;display:block;object-fit:contain!important;pointer-events:none;z-index:3;min-height:0!important;max-width:none;height:auto!important;filter:none}
+.refined .corn{width:180px;left:-38px;top:-120px;transform:rotate(-14deg)}
+.refined .steam{width:190px;right:20%;top:5px;opacity:.55}
+.refined .potato{width:145px;left:43%;bottom:5px;transform:rotate(15deg)}
+.refined .hug>img.herbs{width:160px;right:-30px;bottom:-38px;transform:rotate(-18deg)}
+.refined .drop{width:86px;left:-25px;top:20px;transform:rotate(12deg)}
+.refined .herbs-end{width:155px;right:-40px;top:-55px;transform:rotate(-35deg)}
+.refined .fund .secondary{white-space:normal;line-height:1.35;font-size:18px;text-transform:none;padding:16px 15px}
+@media(max-width:751px){.refined .editorial{padding:34px 6%;gap:24px}.refined .editorial h2{font-size:46px}.refined .editorial figure img{height:345px}.refined .chapter-one{padding-top:38px}.refined .corn{width:95px;top:-58px;left:-26px}.refined .steam{width:115px;right:12%;top:auto;bottom:205px;opacity:.45}.refined .potato{width:90px;left:auto;right:-12px;bottom:-24px}.refined .hug>img:not(.collage-deco){height:330px}.refined .hug>div{padding:32px 12% 32px 6%}.refined .hug h2{font-size:38px}.refined .hug>img.herbs{width:110px;right:-28px;bottom:-25px}.refined .drop{width:58px;left:auto;right:-17px;top:15px}.refined .gallery{padding-block:30px}.refined .strips{height:320px}.refined .strip.active{flex:15}.refined .herbs-end{width:95px;right:-35px;top:10px}.refined .fund{margin-top:50px}.refined .fund .secondary{font-size:18px}}
+
+@media(max-width:751px){.refined .fund{padding-bottom:90px}}
+
+/* Ajustes según los acercamientos de referencia. */
+.refined .gallery{background:#eee2ca;background-image:none}
+.refined .campaign>div{margin-left:19%;padding-left:0;max-width:49%;z-index:6}
+.refined .campaign h2{font-size:clamp(38px,4.5vw,68px)}
+.refined .campaign img.campaign-cow{width:50%;right:-16%;top:-135px;z-index:5;transform:rotate(5deg)}
+.refined .campaign img.cloche{width:24%;height:auto;left:-4%;right:auto;top:45px;bottom:auto;z-index:4;transform:rotate(-7deg);filter:none}
+.refined .campaign img.corn{width:19%;height:auto;left:auto;right:23%;top:auto;bottom:-14px;z-index:4;transform:rotate(9deg);filter:none}
+.refined .campaign-note{left:45%;bottom:12px;max-width:140px;font-size:11px}
+.refined .fund-cow{width:50%;left:-22%;top:-105px;transform:rotate(-8deg)}
+.refined .fund{padding-right:13%}
+.refined .pot-end{width:20%;right:-6%;bottom:-40px;top:auto;transform:rotate(-10deg);z-index:1}
+.refined .fund .actions,.refined .fund-title,.refined .funding{position:relative;z-index:4}
+@media(max-width:1100px){.refined .campaign img.campaign-cow{top:-95px}.refined .campaign h2{font-size:42px}.refined .campaign .cta{min-width:230px}.refined .fund-cow{top:-50px}.refined .fund{padding-right:13%}.refined .fund .cta{font-size:25px}}
+@media(max-width:751px){.refined .campaign{padding-bottom:105px;min-height:325px}.refined .campaign>div{margin-left:0;max-width:72%}.refined .campaign h2{font-size:36px}.refined .campaign .cta{min-width:0}.refined .campaign img.campaign-cow{width:74%;right:-35%;top:-75px;transform:rotate(5deg)}.refined .campaign img.cloche{width:38%;left:-10%;top:auto;bottom:-10px;transform:rotate(-9deg)}.refined .campaign img.corn{width:28%;right:20%;top:auto;bottom:-8px}.refined .fund{padding-right:6%;padding-bottom:155px}.refined .fund-cow{width:85%;left:-37%;top:-75px}.refined .pot-end{width:39%;right:-13%;bottom:-15px}.refined .fund .cta{font-size:32px}.refined .gallery{background:#eee2ca}}
+.refined .campaign img.campaign-cow{top:auto;bottom:-110px}
+@media(max-width:1100px){.refined .campaign img.campaign-cow{top:auto;bottom:-75px}}
+@media(max-width:751px){.refined .campaign img.campaign-cow{top:-75px;bottom:auto}}
+
+/* Reading space and gentle interaction refinements. */
+.refined .formation .potato{left:calc(50% - 155px);right:auto;bottom:8px;width:115px}
+.refined .hug>div{padding-right:145px}
+.refined .hug>img.herbs{right:-38px;width:130px;bottom:12px}
+.refined .closing,.refined .closing strong{font-family:'Courier Prime','Courier New',monospace;font-size:clamp(20px,2.2vw,30px);line-height:1.6;font-weight:400;letter-spacing:0}
+.refined .campaign img.campaign-cow,.refined .fund-cow,.refined .potato,.refined .herbs,.refined .herbs-end{pointer-events:auto;transition:rotate 650ms ease;transform-origin:50% 80%}
+.refined .fund-cow{z-index:0}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+.refined .campaign img.campaign-cow:hover,.refined .fund-cow:hover,.refined .potato:hover,.refined .herbs:hover,.refined .herbs-end:hover{animation:collage-sway 1.5s ease-in-out infinite}
+}
+@keyframes collage-sway{0%,100%{rotate:0deg}30%{rotate:-3deg}70%{rotate:3deg}}
+@media(max-width:751px){.refined .formation{padding-bottom:110px}.refined .formation .potato{left:8%;bottom:2px;width:85px}.refined .hug>div{padding-right:100px}.refined .hug>img.herbs{width:105px;right:-28px;bottom:10px}}
+
+@font-face{font-family:'Kaftan';src:url('assets/kaftan-trial.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}.refined .hero h1,.refined .editorial h2,.refined .hug h2,.refined .gallery h2{font-family:'Kaftan',Georgia,serif;font-weight:400;letter-spacing:-.025em}.refined .editorial h2 em{font-style:normal}.refined .hero h1{line-height:.95}
+
+
+/* Let the composition breathe around text and captions. */
+.refined .community-copy{background-image:none;background-color:#eee2ca}
+.refined .formation{padding-bottom:135px}
+.refined .formation .potato{left:8%;bottom:8px;width:88px}
+.refined .hug{align-items:stretch}
+.refined .hug>img:not(.collage-deco){height:100%;min-height:480px;align-self:stretch;object-fit:cover}
+.refined .closing,.refined .closing strong{font-weight:700}
+.refined footer{align-items:center;flex-wrap:wrap}
+.refined .social-links{display:flex;align-items:center;gap:18px}
+.refined .social-links a{display:block}
+.refined .social-links img{width:34px;height:34px;object-fit:contain;display:block}
+.refined .campaign img.cloche{transform:rotate(10deg);transform-origin:15% 75%;pointer-events:auto;transition:transform 900ms cubic-bezier(.25,.1,.25,1);z-index:5}
+.refined .campaign img.lid-steam{width:23%;left:-1%;right:auto;top:90px;bottom:auto;transform:none;opacity:.92;filter:drop-shadow(0 2px 5px #61503a66);z-index:4;pointer-events:none}
+.refined .pot-end{pointer-events:auto;transform-origin:50% 85%}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.refined .campaign img.cloche:hover{transform:translate(-10%,-15%) rotate(-16deg)}.refined .pot-end:hover{animation:collage-sway 2.4s ease-in-out infinite}}
+@media(max-width:751px){.refined .formation{padding-bottom:125px}.refined .formation .potato{left:8%;bottom:8px;width:78px}.refined .hug>img:not(.collage-deco){height:auto;min-height:0;aspect-ratio:1.15;object-fit:cover}.refined .campaign img.lid-steam{width:35%;left:-5%;top:auto;bottom:-10px}.refined footer{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){.refined .campaign img.cloche{transition:none}}
+
+/* Keep the contribution note in flow and the cow inside its own space. */
+.refined .campaign .campaign-note{display:block;position:static;transform:none;max-width:none;margin:18px 0 0;font-size:clamp(13px,1.15vw,17px);line-height:1.5;color:#29291f}
+.refined .fund-cow{top:0;max-height:100%;object-fit:contain;object-position:top}
+.refined .hug>img:not(.collage-deco){object-position:50% 22%}
+@media(max-width:751px){
+.refined .fund{padding-top:30px}
+.refined .fund-cow{top:0;left:-20%;width:65%;height:auto;max-height:280px}
+.refined .fund-title{min-height:280px;padding-top:35px;padding-left:48%;display:flex;align-items:flex-start}
+.refined .fund h2{font-size:clamp(28px,6vw,40px)}
+.refined .campaign .campaign-note{font-size:14px;margin-top:16px}
+}
+
+/* Responsive collage: ornaments stay attached to their own section. */
+.refined .campaign{padding-top:58px;padding-bottom:60px;min-height:350px}
+.refined .campaign>div:not(.kitchen-objects){margin-left:19%;max-width:49%;position:relative;z-index:6}
+.refined .campaign>div.kitchen-objects{position:absolute;left:-2%;top:45px;width:25%;height:260px;margin:0;padding:0;max-width:none;z-index:4;overflow:hidden;isolation:isolate}
+.refined .campaign .kitchen-objects img.cloche{width:95%;left:-5%;top:12%;bottom:auto;right:auto}
+.refined .campaign .kitchen-objects img.lid-steam{width:70%;height:85%!important;left:20%;top:8%;bottom:auto;right:auto;object-fit:contain;opacity:.85}
+.refined .campaign .kitchen-objects img.corn{width:65%;left:42%;right:auto;top:auto;bottom:-3%;transform:rotate(18deg);z-index:6}
+.refined .campaign img.campaign-cow{bottom:0;top:auto;max-height:calc(100% + 55px);object-fit:contain;object-position:bottom}
+.refined .campaign .campaign-note{position:static;margin-top:18px;max-width:28ch;line-height:1.4;transform:none}
+.refined .community{margin-block:32px;background:#e4d2af}
+.refined .community-copy{background:#e4d2af url('assets/papel-rasgado.png') center/400% 400%;padding-block:48px}
+.refined .formation{padding-bottom:48px}
+.refined .formation figure{position:relative}
+.refined .formation figure>img:not(.potato){width:100%;object-fit:cover}
+.refined .formation figure>img.potato{left:auto;right:12px;bottom:60px;top:auto;width:clamp(64px,7vw,105px);height:auto!important;transform:rotate(12deg)}
+.refined .formation figcaption{position:relative;z-index:4;padding-top:8px}
+.refined .closing strong{font-weight:400}
+.refined .fund-cow{top:8px;bottom:auto;max-height:340px}
+@media(max-width:1100px) and (min-width:751px){.refined .campaign>div.kitchen-objects{width:26%;height:230px;top:70px}.refined .campaign>div:not(.kitchen-objects){margin-left:20%;max-width:52%}.refined .fund-cow{width:43%;left:-18%;max-height:280px}.refined .fund{padding-left:29%}}
+@media(max-width:751px){
+.refined .campaign{padding:35px 6% 225px;min-height:0}
+.refined .campaign>div:not(.kitchen-objects){margin:0;max-width:73%}
+.refined .campaign h2{font-size:clamp(32px,7vw,44px)}
+.refined .campaign>div.kitchen-objects{left:0;top:auto;bottom:0;width:85%;height:210px;max-width:420px}
+.refined .campaign .kitchen-objects img.cloche{width:54%;left:-4%;top:17%;bottom:auto}
+.refined .campaign .kitchen-objects img.lid-steam{width:43%;height:90%!important;left:5%;top:0}
+.refined .campaign .kitchen-objects img.corn{width:52%;left:44%;bottom:0;transform:rotate(12deg)}
+.refined .campaign img.campaign-cow{width:61%;right:-29%;top:-38px;bottom:auto;max-height:260px}
+.refined .campaign .campaign-note{font-size:14px;margin-top:15px}
+.refined .community{margin-block:28px}
+.refined .community-copy{padding:32px 6%}
+.refined .formation{padding-bottom:38px}
+.refined .formation figure>img.potato{width:76px;right:8px;bottom:70px}
+.refined .fund{padding-top:22px}
+.refined .fund-cow{width:64%;left:-22%;top:12px;height:230px;max-height:230px}
+.refined .fund-title{min-height:255px;padding:28px 0 0 43%;display:block}
+.refined .funding{margin-top:0}
+}
+
+.refined .chapter-one figure>img,.refined .future figure>img{object-position:center top}.refined .campaign .kitchen-objects img.corn{width:55%;left:37%;bottom:3%}@media(max-width:751px){.refined .campaign .kitchen-objects img.corn{width:52%;left:43%;bottom:3%}}
+
+/* Contribution banner and compact fair-work strip. */
+@media(min-width:751px){
+.refined .hug{position:relative;grid-template-columns:44% 56%;min-height:390px}
+.refined .hug>img:not(.collage-deco){position:absolute;left:0;top:0;width:44%;height:100%;min-height:0;object-fit:cover;object-position:50% 35%}
+.refined .hug>div{grid-column:2;padding:36px 125px 36px 7%;align-self:center}
+.refined .hug h2{font-size:clamp(32px,3vw,46px);line-height:1.05;margin-bottom:18px}
+.refined .hug h2 br{display:none}
+.refined .hug h2 br:after{content:' '}
+.refined .fund{padding:50px 13% 50px 33%;min-height:460px}
+.refined .fund-cow{left:-3%;top:35px;width:32%;height:auto;max-height:none;transform:rotate(-6deg)}
+.refined .fund-title{min-height:0;padding:0;display:block}
+.refined .fund-title .eyebrow{display:block;margin-top:14px}
+.refined .funding{margin:5px 0 0}
+}
+@media(min-width:751px) and (max-width:1050px){
+.refined .fund{grid-template-columns:1fr;padding-left:34%;padding-right:12%}
+.refined .fund .actions{grid-column:1;margin-top:15px}
+.refined .fund-cow{width:34%;left:-3%}
+.refined .hug>div{padding-right:85px}
+}
+@media(max-width:751px){
+.refined .fund{padding:28px 6% 130px;gap:18px}
+.refined .fund-paper{inset:-28px 0;height:calc(100% + 56px);object-fit:fill}
+.refined .fund-cow{width:47%;height:auto;max-height:none;left:-4%;top:18px;transform:rotate(-6deg)}
+.refined .fund-title{padding:12px 0 0 46%;min-height:clamp(165px,40vw,275px)}
+.refined .fund h2{font-size:clamp(27px,5.7vw,40px);line-height:1.05}
+.refined .fund-title .eyebrow{display:block;font-size:10px;line-height:1.5;margin-top:12px;letter-spacing:.08em}
+.refined .funding{margin:0}
+}
+
+@media(max-width:751px){.refined .fund-cow{height:clamp(125px,34vw,255px);object-fit:contain;object-position:top}.refined .fund-title{min-height:clamp(175px,40vw,300px)}}
+
+
+/* Bound the paper texture independently of the content's height. */
+.refined .fund{background:#a7432b url('assets/papel-rojo.png') center/cover;min-width:0}
+.refined .fund-paper{inset:-24px 0;height:calc(100% + 48px);object-fit:cover;object-position:center;z-index:-1}
+.refined .fund-title,.refined .fund-title h2,.refined .fund-title .eyebrow{min-width:0;max-width:100%;overflow-wrap:break-word}
+.refined .fund-title .eyebrow{white-space:normal;letter-spacing:.08em}
+.refined .campaign>div.kitchen-objects{width:23%;height:240px;top:40px;left:0;bottom:auto}
+.refined .campaign img.corn{width:23%;left:auto;right:12%;bottom:0;top:auto;z-index:4;transform:rotate(12deg)}
+.refined .campaign img.campaign-cow{z-index:5}
+@media(max-width:1050px){.refined .fund-title{padding-right:15px}.refined .herbs-end{width:95px;right:-45px;top:0}}
+@media(max-width:751px){
+.refined .campaign{padding:40px 6% 130px}
+.refined .campaign>div:not(.kitchen-objects){max-width:70%}
+.refined .campaign>div.kitchen-objects{width:40%;height:140px;left:-2%;top:auto;bottom:0}
+.refined .campaign .kitchen-objects img.cloche{width:95%;left:0;top:5%}
+.refined .campaign .kitchen-objects img.lid-steam{width:80%;height:100%!important;left:12%;top:0}
+.refined .campaign img.corn{width:44%;right:0;left:auto;top:125px;bottom:auto;transform:rotate(12deg);z-index:4}
+.refined .campaign img.campaign-cow{width:60%;right:-25%;top:15px;bottom:auto;max-height:240px}
+.refined .campaign .campaign-note{max-width:19ch}
+.refined .fund{padding:40px 6% 125px;gap:18px;background-size:auto 125%;background-position:center}
+.refined .fund-paper{inset:-20px 0;height:calc(100% + 40px);object-fit:cover;object-position:center}
+.refined .fund-title{min-height:160px;padding:0 0 0 39%;display:block;width:100%;box-sizing:border-box}
+.refined .fund h2{font-size:clamp(25px,5.3vw,36px);line-height:1.05;max-width:100%}
+.refined .fund-title .eyebrow{font-size:10px;margin-top:12px;line-height:1.5;max-width:20ch}
+.refined .fund-cow{width:38%;height:150px;left:-3%;top:35px;object-fit:contain;object-position:top;transform:rotate(-5deg)}
+.refined .funding{margin:0;min-width:0}
+.refined .herbs-end{width:75px;right:-45px;top:-10px}
+}
+
+.refined .fund{background-image:none;background-color:#a7432b;background-repeat:no-repeat}.refined .fund-paper{object-fit:cover}@media(max-width:1050px){.refined .fund{background-image:url('assets/papel-rojo.png');background-size:auto 450%;background-position:center;background-repeat:no-repeat}.refined .fund-paper{display:none}}
+
+
+@media(max-width:1050px){.refined .fund{background-size:auto 150%}}
+
+/* Campaign proportions follow the approved collage at every width. */
+.refined .campaign{padding:clamp(30px,4vw,58px) 0;min-height:clamp(300px,32vw,490px);container-type:inline-size}
+.refined .campaign>div:not(.kitchen-objects){margin:0 0 0 25%;padding:0;max-width:45%;width:45%}
+.refined .campaign h2{font-size:clamp(24px,4.5vw,68px);line-height:.98}
+.refined .campaign .cta{min-width:0;max-width:100%;padding:18px 25px;font-size:clamp(15px,2vw,27px);letter-spacing:.08em}
+.refined .campaign .campaign-note{font-size:clamp(11px,1.3vw,17px);max-width:25ch;margin-top:18px}
+.refined .campaign>div.kitchen-objects{width:22%;height:82%;left:0;top:9%;bottom:auto;overflow:visible}
+.refined .campaign .kitchen-objects img.cloche{width:90%;left:3%;top:12%;bottom:auto}
+.refined .campaign .kitchen-objects img.lid-steam{width:72%;height:85%!important;left:15%;top:15%;bottom:auto;object-fit:contain!important}
+.refined .campaign img.campaign-cow{width:42%;height:auto;max-height:105%;right:-12%;left:auto;top:-2%;bottom:auto;object-fit:contain;z-index:5}
+.refined .campaign img.corn{width:25%;height:auto!important;max-height:56%;right:11%;left:auto;top:auto;bottom:0;object-fit:contain;transform:rotate(12deg);z-index:4}
+@media(max-width:751px){
+.refined .campaign{min-height:300px;padding:35px 0 55px}
+.refined .campaign h2{font-size:clamp(23px,4.8vw,36px)}
+.refined .campaign .cta{font-size:clamp(13px,2.7vw,19px);padding:13px 10px;letter-spacing:.04em}
+.refined .campaign .campaign-note{font-size:11px;margin-top:14px}
+.refined .campaign img.campaign-cow{width:44%;right:-13%;top:15%;max-height:75%}
+.refined .campaign img.corn{width:26%;right:9%;bottom:3%;max-height:42%}
+}
+/* Stack the donation illustration above its heading on phones and tablets. */
+@media(max-width:1050px){
+.refined .fund{display:grid;grid-template-columns:minmax(0,1fr);padding:28px 7% 130px;gap:22px}
+.refined .fund-cow{position:relative;grid-column:1;grid-row:1;left:auto;right:auto;top:auto;bottom:auto;width:clamp(230px,52vw,360px);max-width:85%;height:auto;max-height:none;justify-self:center;transform:rotate(-4deg);margin:0;object-fit:contain}
+.refined .fund-title{grid-column:1;grid-row:2;padding:0;min-height:0;width:100%;text-align:center}
+.refined .fund h2{font-size:clamp(34px,6vw,48px);line-height:1.05}
+.refined .fund h2 br{display:none}
+.refined .fund-title .eyebrow{display:block;max-width:none;margin:14px auto 0;font-size:12px;line-height:1.5}
+.refined .funding{grid-column:1;grid-row:3;margin:12px 0 0;width:100%}
+.refined .fund .actions{grid-column:1;grid-row:4;margin-top:10px}
+}
+
+/* Keep the campaign button proportional and give the pot its own footer space. */
+.refined .campaign .cta{width:80%;max-width:440px;box-sizing:border-box}
+@media(max-width:1050px){.refined .fund{padding-bottom:170px}.refined .fund .pot-end{width:130px;height:140px;object-fit:contain;right:0;bottom:0;top:auto}}
+@media(max-width:751px){.refined .campaign .cta{width:100%}}
+@media(max-width:751px){.refined .campaign img.corn{top:40%;bottom:auto}}
+
+/* Expanded photographs retain the complete frame and leave captions outside it. */
+.refined .strip.active{background:#20231e;display:flex;flex-direction:column}
+.refined .strip.active img{object-fit:contain;object-position:center;height:calc(100% - 58px);min-height:0;flex:1}
+.refined .strip.active span{position:static;display:block;flex:none;min-height:58px;padding:14px 10px;background:#20231e;line-height:1.4}
+/* Keep opened portraits close to their natural proportions. */
+.refined .strip.active{flex:3}
+@media(max-width:751px){.refined .strip.active{flex:15}}
+
+/* Large gallery panels, cropped around the subject rather than the image centre. */
+.refined .strip.active{flex:7}
+.refined .strip.active img{object-fit:cover;width:100%;object-position:var(--portrait-position,50% 25%)}
+@media(max-width:751px){.refined .strip.active{flex:15}}
+.refined .fund{background:#a7432b url('assets/papel-rojo.png') center / auto 150% no-repeat}
+.refined .fund .fund-paper{display:none}
+
+/* Dark social marks against the pale paper footer. */
+.refined footer .social-links img{filter:brightness(0) saturate(100%);opacity:.85}.refined footer .social-links a{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}

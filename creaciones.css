@@ -1,0 +1,62 @@
+/* Creaciones: photographic catalogue in the company's coastal landscape. */
+.creation-logo{display:none}.project-photo{display:block;width:100%;max-width:1100px;max-height:75vh;object-fit:contain;margin:24px 0}
+.creations-page{color:#20231e;background:#e8d4b0;color-scheme:light}.creations-page .shell{background:#ead7b8 url('assets/mar.png') 45% 0/400% auto}.creations-page .shell:before{display:none}
+.creations-page .header{height:150px}.creations-page .mark{left:5%;top:24px;width:85px}.creations-page .creation-logo{display:block;width:100%;height:115px;object-fit:contain}.creations-page .logo-crop,.creations-page .brand-caption{display:none}.creations-page .menu-toggle span{background:#20231e}.creations-page .header nav{color:#ead7b8}
+.creations-page #detail{padding:165px 26% 300px 5%;min-height:100vh;isolation:isolate}.creations-page #detail>.back{display:none}.creations-page #detail>h1{font:400 clamp(38px,5.8vw,84px)/1.1 Georgia,serif;max-width:none;text-transform:uppercase;margin:0 0 18px}.creations-page #detail>.creation-intro{max-width:760px;margin:0 0 38px;font-size:16px;line-height:1.6}
+.works-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.work-card{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;background:#171b18;color:#fff1d8}.work-card>img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease}.work-band{position:absolute;inset:auto 0 0;padding:16px 20px;background:rgb(20 25 23 / 78%)}#detail .work-band h2{font:400 clamp(21px,2.1vw,32px)/1.16 Georgia,serif;margin:0;text-transform:uppercase;overflow-wrap:break-word}.work-reveal{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .3s ease,opacity .3s ease}.work-reveal>p{overflow:hidden;min-height:0;margin:0;font-size:15px;line-height:1.4}.work-card:hover>img,.work-card:focus-visible>img{transform:scale(1.04)}.work-card:hover .work-reveal,.work-card:focus-visible .work-reveal{grid-template-rows:1fr;opacity:1}.work-reveal p:before{content:'';display:block;height:8px}.work-la-cocina .work-reveal{font-style:italic}.work-costra>img,.work-questi>img{object-fit:contain;background:#eee3ce}.work-giganti>img{object-position:center 38%}.creations-page a:focus-visible{outline:3px solid #af442d;outline-offset:4px}
+.creation-cliff{position:absolute;z-index:-1;right:0;top:0;bottom:0;width:23%;background:url('assets/roca-textura.png') center/650px;clip-path:polygon(12% 0,100% 0,100% 100%,0 100%,20% 87%,9% 73%,25% 62%,12% 48%,25% 36%,8% 18%)}.creation-sun{position:absolute;z-index:-2;right:12%;top:330px;width:14%;aspect-ratio:1;border-radius:50%;background:#b94d2d url('assets/mar.png') center top/700%;background-blend-mode:multiply}.creation-diver{position:absolute;z-index:-1;right:9%;bottom:350px;width:20%;height:auto}.creation-sea{position:absolute;z-index:-2;bottom:0;left:0;right:0;height:240px;background:url('assets/mar.png') center bottom/100% auto;mask-image:linear-gradient(transparent,#000 35%)}.creations-page footer{background:#191c17;color:#e8d4b0}
+@media(min-width:1200px){.creations-page .header nav[hidden]{display:flex!important}.creations-page .header nav{display:flex;gap:24px;top:40px;left:24%;right:25%;width:auto;padding:0;background:none;border:0;box-shadow:none;color:#20231e;white-space:nowrap}.creations-page .header nav a{font-size:13px}.creations-page .header nav a[href='#vaca']{display:none}.creations-page .header nav a[href='#creaciones']{color:#a63f26;text-decoration:underline;text-underline-offset:7px}.creations-page .menu-toggle{display:none}}
+@media(max-width:1100px){.works-grid{grid-template-columns:1fr}.creations-page #detail{padding-right:24%}.work-card{aspect-ratio:3/2}#detail .work-band h2{font-size:29px}.work-reveal{grid-template-rows:1fr;opacity:1}.creation-cliff{width:20%}}
+@media(max-width:600px){.creations-page .header{height:118px}.creations-page .mark{left:18px;top:16px;width:62px}.creations-page .creation-logo{height:90px}.creations-page #detail{padding:132px 22px 250px 16px}.creations-page #detail>h1{font-size:clamp(30px,9vw,48px)}.creations-page #detail>.creation-intro{font-size:14px;margin-bottom:25px}.works-grid{gap:18px}.work-card{aspect-ratio:4/3}.work-band{padding:12px 14px}#detail .work-band h2{font-size:22px}.work-reveal>p{font-size:14px}.creation-cliff{width:12px;clip-path:none}.creation-sun{top:auto;bottom:120px;right:40%;width:24%}.creation-diver{right:7%;bottom:90px;width:37%}.creation-sea{height:110px;background-size:150% auto}.creations-page .menu-toggle{right:18px}.work-emergencia{aspect-ratio:1/1}}
+@media(hover:none){.work-reveal{grid-template-rows:1fr;opacity:1}}
+@media(prefers-reduced-motion:reduce){.work-card>img,.work-reveal{transition:none}.work-card:hover>img{transform:none}}
+
+.creations-page .shell{background-image:linear-gradient(#f3e4c9bb,#f3e4c9bb),url('assets/mar.png');background-position:0 0,45% 0;background-size:auto,400% auto}
+
+@media(min-width:601px) and (max-width:1199px){.creations-page .menu-toggle{right:25%}}
+/* Original landscape created specifically for the catalogue. */
+.creations-page .shell{background:#ebd8b7 url('assets/paisaje-creaciones.png') center top/100% 100% no-repeat}
+.creations-page .creation-cliff,.creations-page .creation-sun,.creations-page .creation-diver,.creations-page .creation-sea{display:none}
+.creations-page #detail{padding-bottom:clamp(390px,36vw,700px)}
+.creations-page footer{background:transparent;border:0;text-shadow:0 1px 4px #000}
+#detail .work-la-cocina .work-band h2{font-size:clamp(21px,1.9vw,29px)}
+.work-la-cocina .work-reveal{font-style:normal}
+@media(max-width:600px){.creations-page #detail{padding-bottom:330px}.creations-page .shell{background-size:auto 100%;background-position:72% top}#detail .work-la-cocina .work-band h2{font-size:21px}}
+
+.creations-page footer{background:linear-gradient(transparent,#111b18ed 45%);text-shadow:0 1px 4px #000;padding-top:65px}
+/* Independent responsive scenery. Each bitmap retains its intrinsic aspect ratio. */
+.creations-page .shell{background:#f0dfc0;max-width:2200px;margin-inline:auto;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.12' filter='url(%23n)'/%3E%3C/svg%3E");background-size:220px 220px}
+.creations-page #detail{padding-bottom:0;overflow:hidden}
+.scene-near{position:absolute;right:-4%;top:0;bottom:0;width:38%;z-index:-1;overflow:hidden;pointer-events:none}.near-piece{display:block;width:100%;height:auto;margin-top:-1px}.near-piece:nth-child(even){transform:scaleY(-1)}
+.scene-sun{position:absolute;right:13%;top:600px;width:clamp(80px,12vw,210px);aspect-ratio:1;border-radius:50%;background:#b64b2b;z-index:-2;box-shadow:inset 0 0 25px #76322024}
+.scene-ending{position:relative;margin:90px calc(-26vw) 0 calc(-5vw);width:100vw;max-width:2200px;height:clamp(440px,47vw,980px);isolation:isolate;pointer-events:none;z-index:-2}
+.scene-far{position:absolute;bottom:30%;left:0;width:100%;height:auto;z-index:0}
+.scene-water{position:absolute;bottom:0;left:0;width:100%;height:auto;z-index:1}
+.scene-diver{position:absolute;width:clamp(110px,18vw,260px);height:auto;right:17%;top:-65px;z-index:2;transform:translate3d(0,var(--dive-y,0px),0) rotate(var(--dive-turn,0deg));transform-origin:55% 55%;will-change:transform}
+.creations-page footer{background:#19302b;padding-top:35px}
+@media(max-width:1199px){.creations-page .menu-toggle{left:50%;right:auto;transform:translateX(-50%);top:30px;background:#f0dfc0e8;border-radius:4px;z-index:12}.creations-page .header nav{left:50%;right:auto;transform:translateX(-50%);top:88px;max-width:calc(100vw - 32px);z-index:13}}
+@media(max-width:1100px){.scene-ending{margin-left:-5vw}.scene-near{width:38%;right:-7%}.scene-diver{right:14%}}
+@media(max-width:600px){.scene-near{width:90px;right:-57px}.scene-sun{top:auto;bottom:380px;right:10%;width:90px}.scene-ending{width:calc(100vw - 0px);margin:45px -22px 0 -16px;height:430px}.scene-far{bottom:120px;width:170%;max-width:none;left:-50%}.scene-water{width:170%;max-width:none;left:-35%;bottom:0}.scene-diver{width:150px;right:14%;top:-30px}.creations-page #detail{padding-bottom:0}}
+@media(prefers-reduced-motion:reduce){.scene-diver{transform:none;will-change:auto}}
+.scene-far{bottom:calc(min(100vw,2200px) * .30)}
+@media(max-width:600px){.scene-far{bottom:calc(100vw * .51)}}
+/* Upright geological wall and full-page descent. */
+.near-piece:nth-child(even){transform:none}.near-piece:not(:first-child){margin-top:-10%}
+.scene-near{z-index:0}.scene-sun{z-index:0;transform:translateY(var(--catalogue-sun-y,0px));will-change:transform}.works-grid,.creation-intro,.creations-page #detail>h1{position:relative;z-index:2}.scene-ending{z-index:0}.scene-diver{top:180px;right:12%;z-index:1;pointer-events:none}
+@media(max-width:1100px){.scene-near{width:38%;right:-4%}.scene-diver{right:10%;width:clamp(85px,16vw,170px)}}
+@media(max-width:600px){.scene-near{width:150px;right:-60px}.scene-diver{right:0;width:80px;top:180px}.scene-sun{top:220px;bottom:auto;right:0;width:65px}.creations-page #detail{padding-right:48px}.scene-ending{margin-right:-48px}.scene-far,.scene-water{display:block}}
+@media(prefers-reduced-motion:reduce){.scene-sun,.scene-diver{transform:none;will-change:auto}}
+
+.near-piece:not(:first-child){margin-top:-30%;mask-image:linear-gradient(transparent,#000 22%)}
+.scene-near{z-index:2;pointer-events:none}.works-grid{z-index:3}.scene-diver{z-index:1}.scene-ending{z-index:0}
+.scene-sun{z-index:1;transform:translate(var(--catalogue-sun-x,0px),var(--catalogue-sun-y,0px)) scale(var(--catalogue-sun-scale,1));transform-origin:center;will-change:transform}
+.creations-page footer{margin-top:-190px;min-height:190px;background:rgb(15 35 31 / 52%);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);z-index:4;border-top:1px solid #e8d4b025}
+@media(max-width:600px){.creations-page footer{margin-top:-170px;min-height:170px}.scene-ending{height:560px}}
+@media(prefers-reduced-motion:reduce){.scene-sun,.scene-diver,.landscape .cave-opening,.landscape .cave-moss,.landscape .sea-world .diver{transform:none;will-change:auto}}
+/* Fade the blur itself, keeping footer lettering fully opaque. */
+.creations-page footer{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-top:0;isolation:isolate}
+.creations-page footer:before{content:'';position:absolute;inset:-48px 0 0;z-index:-1;pointer-events:none;background:rgb(15 35 31 / 60%);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);mask-image:linear-gradient(to bottom,transparent 0%,#000 44%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 44%)}
+
+/* Opaque rock joins: no translucent duplicate silhouette against paper or sun. */
+.near-piece:not(:first-child){mask-image:none;-webkit-mask-image:none;margin-top:-30%;clip-path:polygon(0 8%,52% 8%,58% 5%,64% 7%,73% 3%,82% 6%,91% 2%,100% 4%,100% 100%,0 100%)}
+.near-piece:nth-child(3n+2){width:108%;margin-left:-3%}.near-piece:nth-child(3n){width:103%;margin-left:1%}

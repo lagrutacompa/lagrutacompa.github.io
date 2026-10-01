@@ -1,0 +1,54 @@
+@font-face{font-family:Jost;src:url('assets/umbral/Jost.ttf');font-weight:100 900;font-display:swap}@font-face{font-family:Bodoni;src:url('propuestas/assets/fonts/font-3.ttf');font-weight:600;font-display:swap}
+/* Reading uses Jost; short annotations keep the typewriter voice. */
+@font-face{font-family:GrutaCourier;src:url('propuestas/assets/fonts/font-5.ttf');font-display:swap}
+body{--editorial-body:Jost,Arial,sans-serif;--editorial-display:Bodoni,Georgia,serif;--editorial-aside:GrutaCourier,'Courier New',monospace}
+#menu a,#home .about p{font-family:var(--editorial-body);font-size:18px;line-height:1.6}
+.creations-page .work-reveal>p,.work-page .work-subtitle,.work-page .eyebrow{font-family:var(--editorial-aside)}
+body.kitchen-editorial,body.people-editorial{font-family:var(--editorial-body)}
+.kitchen-editorial nav a,.kitchen-editorial .reveal>p,.kitchen-editorial .fund .eyebrow,.kitchen-editorial .closing,.kitchen-editorial .closing strong,.kitchen-editorial .actions a{font-family:var(--editorial-body)}
+.kitchen-editorial .reveal>p{font-size:19px;line-height:1.6;letter-spacing:0;max-width:65ch}
+.kitchen-editorial .funding .reveal>p{font:18px/1.6 var(--editorial-body)}
+.kitchen-editorial .margin-note,.kitchen-editorial .campaign-note,.kitchen-editorial .hero-meta,.kitchen-editorial .eyebrow,.kitchen-editorial figcaption{font-family:var(--editorial-aside)}
+.kitchen-editorial .reveal summary{font-family:var(--editorial-display)}
+.people-editorial .manifesto p,.people-editorial .manifest-people p,.people-editorial nav a,.people-editorial .manifest-people summary{font-family:var(--editorial-body);letter-spacing:0}
+.people-editorial .manifesto p,.people-editorial .manifest-people p{font-size:19px;line-height:1.65;max-width:65ch}
+.people-editorial .surface h1,.people-editorial .manifesto h2{font-family:var(--editorial-display);letter-spacing:-.025em}
+@media(max-width:650px){#home .about p,.kitchen-editorial .reveal>p,.kitchen-editorial .funding .reveal>p,.people-editorial .manifesto p,.people-editorial .manifest-people p{font-size:17px}}
+body.work-page,body.creations-page{--editorial-body:Jost,Arial,sans-serif;--editorial-display:Bodoni,Georgia,serif;font-family:var(--editorial-body);font-size:19px;line-height:1.6}
+.work-page :is(p,a,button,summary,small,figcaption,dt,dd,blockquote,li),.creations-page :is(p,a,button,summary,small,figcaption){font-family:var(--editorial-body)}
+.work-page .title h1,.creations-page #detail>h1{font-family:var(--editorial-display);font-weight:600;font-size:clamp(48px,6.6vw,90px);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+.work-page .work-story h2,.work-page .work-details h2{font-family:var(--editorial-display);font-weight:600;font-size:clamp(32px,3.5vw,47px);line-height:1.15;letter-spacing:-.02em}
+.creations-page #detail .work-band h2{font-family:var(--editorial-display);font-weight:600;line-height:1.15;letter-spacing:-.02em;text-transform:none}
+.work-page .work-story>p,.work-page .synopsis>p{font:19px/1.65 var(--editorial-body);max-width:65ch}.work-page .work-story{max-width:760px}.work-page .work-subtitle{font:23px/1.45 var(--editorial-body)}.work-page .work-details dl{font:17px/1.6 var(--editorial-body)}.work-page :is(.work-header,.work-menu,.work-contact){font-family:var(--editorial-body)}.work-page .work-header nav a{font-family:var(--editorial-body)}.work-page .synopsis small{font:16px/1.6 var(--editorial-body)}.work-page figcaption{font:14px/1.5 var(--editorial-body)}.creations-page #detail>.creation-intro{font:19px/1.6 var(--editorial-body);max-width:65ch}.work-page h1,.work-page h2{overflow-wrap:break-word}.work-page .work-story p+p{margin-top:1.2em}.work-page .work-gallery{border:0}.work-page .work-gallery figure{border:0}
+@media(max-width:650px){body.work-page,body.creations-page{font-size:17px}.work-page .title h1,.creations-page #detail>h1{font-size:clamp(38px,10.6vw,52px);line-height:1.08}.work-page .work-story>p,.work-page .synopsis>p,.creations-page #detail>.creation-intro{font-size:17px;line-height:1.6}.work-page .work-story h2{font-size:32px}.work-page .work-subtitle{font-size:20px}.work-page .work{padding-inline:28px}.work-page .work-story{max-width:100%}.work-page .work-contact{font-size:16px}}
+/* Short work descriptions are annotations, not long-form reading. */
+.creations-page .work-reveal>p,.work-page .work-subtitle,.work-page .eyebrow{font-family:var(--editorial-aside);font-size:14px;line-height:1.5}
+.kitchen-editorial.refined .editorial h2,.kitchen-editorial.refined .community-copy h2,.kitchen-editorial.refined .hug h2,.kitchen-editorial.refined .gallery h2{font-family:var(--editorial-display);letter-spacing:-.025em}
+.kitchen-editorial.refined .community-copy h2{font-size:clamp(29px,3vw,42px);line-height:1.15}
+.kitchen-editorial.refined .community-copy .reveal>p{font-size:18px;line-height:1.6}
+@media(max-width:650px){.kitchen-editorial.refined .community-copy .reveal>p{font-size:17px}}
+/* Keep the signature readable where the cave becomes light on narrow screens. */
+@media(max-width:600px){body:not(.creations-page) .mark{mix-blend-mode:normal}body:not(.creations-page) .brand-caption{display:block;color:#f4ead7;background:none;padding:0;margin-left:0;align-self:center;text-align:center;white-space:normal;font-size:14px;letter-spacing:.05em;line-height:1.35;width:max-content;max-width:calc(100vw - 70px)}}
+
+.brand-caption .caption-break{display:inline}
+@media(max-width:600px){body:not(.creations-page) .brand-caption .caption-break{display:block}}
+
+@media(max-width:600px){body:not(.creations-page) .brand-caption{color:var(--paper);text-align:right}}
+.work-page .title .title-subtitle{font-family:var(--editorial-display);font-size:clamp(28px,3.2vw,44px);font-weight:600;line-height:1.2;letter-spacing:-.025em;max-width:none}.expanded-gallery{max-width:1040px;margin:70px auto}.expanded-gallery h2{font:600 clamp(30px,4vw,44px)/1.2 var(--editorial-display);margin-bottom:30px}.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;align-items:start}.photo-grid figure{margin:0!important;transform:none!important}.photo-grid img{display:block;width:100%;height:auto;max-height:500px;object-fit:contain}.photo-grid figcaption{margin:12px 0}.allies{margin-top:85px;padding-top:45px;border-top:1px solid #e7d3af55}.allies h2{text-align:center;margin-bottom:38px}.allies-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 20px}.allies-grid figure{margin:0;min-width:0}.allies-grid figure>a,.allies-grid figure>span{height:145px;padding:18px;display:flex;align-items:center;justify-content:center;background:#f8f6ef}.allies-grid img{width:100%;height:100%;object-fit:contain}.allies-grid figcaption{font:14px/1.4 var(--editorial-body);text-align:center;margin-top:10px}.allies-grid a:hover img{transform:scale(1.04)}@media(max-width:650px){.photo-grid{grid-template-columns:1fr;gap:25px}.expanded-gallery{margin-top:45px}.allies-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 15px}.allies-grid figure>a,.allies-grid figure>span{height:125px;padding:15px}.allies-grid figcaption{font-size:13px}}
+/* La galería ocupa sus columnas, sin heredar el marco de portada. */
+.work-page .photo-grid{gap:20px;align-items:start}
+.work-page .photo-grid figure{width:100%;max-width:none;justify-self:stretch;border:0;box-shadow:none}
+.work-page .photo-grid figure>a{display:block;width:100%}
+.work-page .photo-grid img{width:100%;height:auto;max-height:none;object-fit:contain}
+.work-page .emergencia .title h1{margin-bottom:12px}
+.work-page .emergencia .title .title-subtitle{margin-top:0;margin-bottom:20px}
+.allies-grid{background:#f8f6ef;padding:30px;gap:30px 32px;align-items:center}
+.allies-grid figure>a,.allies-grid figure>span{background:transparent;height:120px;padding:10px}
+.allies-grid img{mix-blend-mode:multiply;max-width:210px;margin:auto}
+@media(max-width:650px){.allies-grid{padding:22px 14px;gap:22px 14px}.allies-grid figure>a,.allies-grid figure>span{height:105px;padding:5px}}
+/* Un borde difuso integra los aliados con el paisaje, conservando su lectura. */
+.allies-grid{position:relative;isolation:isolate;background:transparent;padding:48px 38px}
+.allies-grid::before{content:"";position:absolute;inset:7px;z-index:-1;background:#f8f6ef;border-radius:35px;filter:blur(23px);pointer-events:none}
+@media(max-width:650px){.allies-grid{padding:36px 22px}.allies-grid::before{inset:6px;border-radius:24px;filter:blur(16px)}}
+.kitchen-editorial .campaign button.cta{cursor:pointer}
+

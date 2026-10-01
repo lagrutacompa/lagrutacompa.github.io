@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow+Condensed:wght@400;500;700;800&family=Courier+Prime:wght@400&display=swap');
+:root{color-scheme:dark;--ink:#191a16;--paper:#e7d3af;--muted:#c8bc9f;--sun:#b94d2d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#11130f;color:var(--paper);font-family:'Courier Prime',Georgia,serif;font-size:16px;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid var(--paper);outline-offset:6px}a:hover{color:#fff1d8}[hidden]{display:none!important}
+.shell{position:relative;max-width:860px;margin:auto;overflow:clip;background:var(--ink)}
+.shell:before{content:'';position:absolute;inset:0;pointer-events:none;background:url('assets/gruta-musgo.png') left bottom/2400px auto;opacity:.1;z-index:0}
+.header{position:absolute;z-index:10;inset:0 0 auto}.mark{position:absolute;top:30px;left:6%;width:170px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.logo-crop{position:relative;display:block;width:115px;aspect-ratio:1516/2448;overflow:hidden}.logo-crop img{position:absolute;max-width:none;width:163.66%;height:auto;left:-31.66%;top:-21.56%}
+.brand-caption{font:400 16px/1.25 'Barlow Condensed',sans-serif;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.menu-toggle{position:absolute;right:6%;top:36px;border:0;background:transparent;width:44px;height:44px;padding:9px}.menu-toggle span{display:block;height:1px;background:var(--paper);margin:6px 0;width:27px}.header nav{position:absolute;right:6%;top:90px;width:min(330px,85vw);padding:30px;background:#1a1a16f7;border:1px solid #8f8067;box-shadow:0 15px 60px #0008}.header nav a{display:block;padding:9px 0;font-size:16px}
+.hero{position:relative;width:100%;aspect-ratio:2/3}.landscape{position:absolute;inset:0;overflow:hidden;mask-image:linear-gradient(#000 0%,#000 90%,transparent 100%)}.landscape .sea,.landscape .cave{position:absolute;width:100%;height:100%;object-fit:fill}.sea{will-change:transform;transform:translate3d(0,var(--sea-y,0px),0) scale(1.13);transform-origin:50% 70%}.sun{position:absolute;left:66%;top:50%;width:9.5%;aspect-ratio:1;border-radius:50%;background:var(--sun) url('assets/mar.png') center top/600% auto;background-blend-mode:multiply;transform:translate3d(0,var(--sun-y,0px),0);will-change:transform}.cave{z-index:2}.landscape .diver{position:absolute;left:74%;top:59%;width:17%;height:auto;z-index:3;object-fit:contain;transform:rotate(-5deg)}
+.intro{position:absolute;z-index:3;left:8%;top:25%;max-width:52%}.lines{display:flex;flex-direction:column;align-items:flex-start;font:500 clamp(16px,2.7vw,23px)/1.8 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.14em}.lines:after{content:'';width:110px;height:1px;background:var(--paper);margin-top:14px}
+.sea-quote{position:absolute;z-index:4;top:73%;left:30%;width:51%;margin:0;text-align:center;font:400 clamp(17px,2.7vw,25px)/1.4 'Courier Prime',Georgia,serif;color:#fff0d2;text-shadow:0 2px 6px #0c201d,0 0 24px #0c201d;opacity:1;transform:translateY(0);transition:opacity 1.4s ease,transform 1.4s ease}.sea-quote.awaiting{opacity:0;transform:translateY(16px)}
+.campaign{position:relative;z-index:3;margin:-6% auto 0;text-align:center;width:85%;padding-top:10px}.paper{position:relative;display:flex;align-items:center;justify-content:center;gap:15px;max-width:640px;min-height:185px;margin:auto;padding:28px 50px 30px 180px;color:#24221b;transform:rotate(-2deg);transition:transform .25s}
+.paper:before{content:'';position:absolute;inset:0;z-index:-1;background:#ead1a5 url('assets/mar.png') 50% 10%/190%;clip-path:polygon(6% 11%,18% 5%,31% 7%,46% 2%,63% 5%,82% 4%,96% 19%,100% 41%,97% 72%,91% 90%,73% 94%,52% 97%,34% 92%,17% 96%,5% 85%,0 57%,2% 30%)}
+.paper:hover{transform:rotate(-.5deg) translateY(-3px);color:#171912}.cow{position:absolute;left:-20px;top:-30px;width:245px;height:180px;object-fit:contain;transform:rotate(2deg)}.campaign-title{position:relative;font:500 clamp(18px,3vw,26px)/1.2 'Barlow Condensed',sans-serif;letter-spacing:.07em;text-transform:uppercase}.paper strong{display:block;font:400 clamp(36px,6.2vw,57px)/1.15 'Alfa Slab One',Georgia,serif;letter-spacing:-.025em;text-transform:none;white-space:nowrap;margin-top:6px}.arrow{position:absolute;right:6%;bottom:27px;font-size:32px;line-height:1}.campaign>p{font-size:15px;max-width:470px;margin:22px auto 0}.campaign>p a{text-decoration:underline;text-underline-offset:4px}
+.practices{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;padding:55px 7% 35px}.practices>a{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;font:400 19px/1.4 'Barlow Condensed',sans-serif;letter-spacing:.09em;text-transform:uppercase}.badge{display:block;width:155px;max-width:100%;height:auto;aspect-ratio:1;object-fit:contain;transition:transform .25s}.practices a:hover .badge{transform:translateY(-5px)}
+.about{position:relative;display:grid;grid-template-columns:1fr 2fr;gap:25px;padding:30px 10% 55px}.about h2{font:400 32px/1.2 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;margin:7px 0}.about p{margin:0 0 16px;font-size:16px}.closing-sea{position:relative;height:200px;background:url('assets/mar.png') center 95%/100% auto;mask-image:linear-gradient(transparent,#000 65%)}
+footer{position:relative;display:flex;justify-content:center;flex-wrap:wrap;gap:14px 28px;padding:35px 6%;border-top:1px solid #dbcaac33;font-size:16px}footer span{width:100%;text-align:center;font:400 16px 'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}footer a{text-decoration:underline;text-underline-offset:6px;padding:8px 0}
+#detail{position:relative;min-height:80vh;padding:310px 10% 100px}#detail h1{font:400 clamp(40px,7vw,70px)/1.1 'Barlow Condensed',sans-serif;max-width:650px;margin:25px 0}#detail h2{font:400 30px/1.2 'Barlow Condensed',sans-serif}#detail p{max-width:590px}#detail .back{font-size:14px;text-decoration:underline}#detail .project-link{display:block;padding:24px 0;border-block:1px solid #dfc9a455;margin:36px 0;font-size:23px}.action{display:inline-block;background:var(--paper);color:var(--ink);padding:14px 22px;margin-top:20px}.action:hover{color:#000;background:#fff0cc}.pending{border-left:2px solid #b78b59;padding:10px 20px;color:var(--muted);margin-top:32px}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%)}.skip{position:fixed;left:12px;top:-100px;z-index:30;background:var(--ink);padding:12px}.skip:focus{top:12px}
+@media(min-width:1000px){.shell{box-shadow:0 0 120px #000}body{padding:22px 0}.hero{margin-top:-22px}.mark{top:40px}}
+@media(max-width:540px){.mark{top:18px;left:5%;width:137px;gap:9px}.logo-crop{width:73px}.brand-caption{font-size:14px;letter-spacing:.06em}.menu-toggle{top:20px}.intro{top:30%;left:8%;max-width:62%}.lines{font-size:16px}.lines:after{margin-top:9px;width:80px}.hero{aspect-ratio:2/3;min-height:650px}.sea-quote{left:25%;width:57%;top:74%;font-size:16px;line-height:1.45}.landscape .diver{left:72%;top:61%;width:20%}.campaign{width:91%;margin-top:-5%;padding-top:0}.paper{min-height:135px;gap:12px;padding:24px 25px 26px 106px}.cow{width:150px;height:110px;left:-15px;top:-22px}.campaign-title{font-size:17px;letter-spacing:.04em}.paper strong{font-size:35px;margin-top:5px}.arrow{font-size:25px;bottom:18px;right:8%}.campaign>p{font-size:14px;max-width:290px;margin-top:20px}.practices{gap:5px;padding:30px 3% 25px}.practices>a{font-size:16px;letter-spacing:.025em;gap:5px}.badge{width:115px}.about{padding:25px 8% 35px;grid-template-columns:1fr;gap:14px}.about h2{font-size:28px}.about h2 br{display:none}.about p{font-size:16px}.closing-sea{height:130px}#detail{padding-top:220px}footer{gap:8px 18px;font-size:14px}}
+@media(max-width:360px){.paper strong{font-size:30px}.paper{padding-left:94px}.cow{width:132px}.practices>a{font-size:14px}.sea-quote{font-size:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.sea{transform:scale(1.13)}.sun{transform:none}.sea-quote.awaiting{opacity:1;transform:none}}
+
+/* Refined paper layers: each distant element belongs to its own plane. */
+.shell:before{background:url('assets/roca-textura.png') left top/640px 640px repeat;opacity:.26}
+.logo-ink{position:absolute;width:163.66%;height:143.3%;left:-31.66%;top:-21.56%;background:var(--paper);mask:url('assets/logo-original.png') center/100% 100% no-repeat}
+.intro{top:29%}
+.sea-world{position:absolute;inset:0;transform:translate3d(0,var(--sea-y,0px),0) scale(1.13);transform-origin:50% 70%;will-change:transform}
+.landscape .sea{transform:none;will-change:auto}
+.sea-world .diver{left:65%;top:56.5%;width:15%;height:auto;z-index:1;transform:rotate(-5deg)}
+.sea-quote{z-index:1;top:53%;left:45%;width:27%;font:italic 400 clamp(18px,2.6vw,24px)/1.45 Georgia,serif;color:#484536;text-shadow:none;opacity:.92;transform:translate3d(0,var(--quote-y,0px),0);transition:opacity 1.4s ease;will-change:transform}
+.sea-quote.awaiting{opacity:0;transform:translate3d(0,var(--quote-y,0px),0)}
+.sun{z-index:1;top:44%}
+.campaign{padding-top:18px}
+.paper{min-height:230px;padding:28px 35px 30px 190px;max-width:700px;transform:rotate(-2deg)}
+.cow{width:265px;height:265px;left:-48px;top:-24px;transform:rotate(5deg)}
+.campaign-title{color:#993d29;font:700 clamp(25px,4.1vw,37px)/1.08 'Barlow Condensed',sans-serif;letter-spacing:.015em;text-transform:uppercase}
+.paper strong{font:800 clamp(60px,10vw,89px)/1 'Barlow Condensed',sans-serif;letter-spacing:.025em;text-transform:uppercase;color:#304c3a;margin-top:8px}
+@media(max-width:540px){.intro{top:34%}.hero{min-height:710px}.sea-world .diver{left:66%;top:57%;width:16%}.sea-quote{top:52%;left:45%;width:28%;font-size:16px;line-height:1.4}.paper{min-height:178px;padding:25px 22px 28px 103px}.cow{width:156px;height:180px;left:-33px;top:-4px}.campaign-title{font-size:25px}.paper strong{font-size:53px;letter-spacing:.01em;margin-top:5px}.campaign{padding-top:10px}}
+@media(max-width:360px){.paper{padding-left:91px;padding-right:17px}.cow{width:140px;left:-29px}.campaign-title{font-size:22px}.paper strong{font-size:46px}}
+@media(prefers-reduced-motion:reduce){.sea-world{transform:scale(1.13)}.sea-quote,.sea-quote.awaiting{transform:none;opacity:.92}}
+@media(max-width:540px){.sea-quote{top:50%;left:43%;width:34%;line-height:1.25}}
+
+/* Full-width scenery and loose notes around the campaign. */
+body{padding:0}.shell{width:100%;max-width:none;margin:0;box-shadow:none}.hero{margin-top:0}
+.campaign{width:94%;max-width:1560px;display:grid;grid-template-columns:minmax(170px,1fr) minmax(360px,2.6fr) minmax(170px,1fr);gap:24px;align-items:center;padding:30px 1% 35px;margin-top:-3%}
+.campaign .paper{width:100%;min-height:220px;padding-left:135px;padding-right:24px;z-index:2}.campaign .cow{width:205px;height:220px;left:-53px;top:-12px}.campaign .campaign-title{font-size:clamp(25px,2.6vw,38px)}.campaign .paper strong{font-size:clamp(56px,5.7vw,86px)}
+.paper-note{position:relative;color:#364638;font:400 16px/1.4 'Courier Prime',Georgia,serif;padding:27px 23px;isolation:isolate}.paper-note:before{content:'';position:absolute;inset:0;z-index:-1;background:#e7d3af url('assets/mar.png') 45% 12%/650%;clip-path:polygon(3% 8%,16% 3%,32% 5%,51% 0,68% 4%,91% 3%,96% 21%,100% 42%,95% 66%,98% 89%,81% 94%,57% 97%,34% 94%,15% 99%,2% 84%,5% 62%,0 37%)}
+.paper-note p{margin:0}.note-work{transform:rotate(-7deg)}.note-work>strong{display:block;font-size:23px;font-weight:bold;line-height:1.2}.note-work>span{display:block;font-size:14px;margin:5px 0 10px}.note-work:hover{color:#172c20;transform:rotate(-4deg)}.note-support{transform:rotate(6deg);margin:0}.note-support strong{font-weight:bold}
+.practices{max-width:1280px;margin:0 auto}.about{max-width:1100px;margin:0 auto}.closing-sea{background-size:100% auto}
+footer a{display:grid;place-items:center;width:64px;height:64px;padding:4px;text-decoration:none;transition:transform .2s}footer a:hover{transform:translateY(-4px)}footer a img{width:100%;height:100%;object-fit:contain}footer{gap:12px 30px}
+@media(min-width:900px){.hero{aspect-ratio:1/1;min-height:900px}.intro{top:34%}.landscape .diver{max-width:180px}.sea-quote{font-size:clamp(22px,2vw,30px)}.sun{width:8%}.mark{left:6%;top:35px}.logo-crop{width:125px}}
+@media(min-width:1400px){.hero{aspect-ratio:4/3;min-height:1000px}.campaign{gap:40px}.paper-note{font-size:18px;padding:34px 28px}.note-work>span{font-size:16px}}
+@media(max-width:1099px){.campaign{grid-template-columns:1fr 1fr;gap:0 18px;width:90%;padding:0 0 30px;margin-top:-7%}.note-work{grid-column:1;grid-row:1;justify-self:start}.note-support{grid-column:2;grid-row:1;justify-self:end}.paper-note{width:min(100%,250px);padding:24px 22px;margin:0 0 20px}.campaign .paper{grid-column:1/-1;grid-row:2;max-width:700px;margin:0 auto;padding-left:180px;min-height:210px}.campaign .cow{width:240px;height:240px;left:-42px;top:-15px}.campaign .campaign-title{font-size:34px}.campaign .paper strong{font-size:78px}}
+@media(max-width:540px){.campaign{width:94%;gap:0 12px;margin-top:-3%;padding-bottom:12px}.paper-note{padding:20px 15px;font-size:14px;line-height:1.35;margin-bottom:16px}.note-work>strong{font-size:20px}.note-work>span{font-size:13px;line-height:1.3}.note-work{transform:rotate(-5deg)}.note-support{transform:rotate(5deg)}.campaign .paper{min-height:170px;padding:25px 20px 25px 104px}.campaign .cow{width:150px;height:170px;left:-26px;top:-2px}.campaign .campaign-title{font-size:25px}.campaign .paper strong{font-size:52px}.sea-quote,.sea-quote.awaiting{top:50%;left:45%;width:30%;font-size:clamp(12px,3.45vw,16px);line-height:1.22;text-wrap:balance;opacity:.94;transform:translate3d(0,clamp(0px,var(--quote-y,0px),16px),0)}footer a{width:60px;height:60px}}
+@media(max-width:360px){.campaign .campaign-title{font-size:22px}.campaign .paper strong{font-size:45px}.campaign .paper{padding-left:89px}.campaign .cow{width:130px;left:-23px}.paper-note{font-size:13px;padding:18px 12px}.note-work>span{font-size:12px}.sea-quote,.sea-quote.awaiting{font-size:12px;left:44%;width:32%;top:49.5%}}
+@media(prefers-reduced-motion:reduce){.sea-quote,.sea-quote.awaiting{transform:none}footer a{transition:none}}
+@media(min-width:900px){.sun{top:37%}.sea-quote{top:49%;font-size:clamp(20px,1.7vw,26px);line-height:1.3}}
+/* A single assembled campaign collage, with notes tucked under its banner. */
+.campaign{width:88%;max-width:780px;grid-template-columns:1fr 1fr;gap:0 14%;padding:0 0 30px;margin-top:-3%;align-items:start}
+.campaign .paper{grid-column:1/-1;grid-row:1;max-width:none;min-height:205px;padding:28px 30px 30px 180px;margin:0;z-index:2}
+.campaign .cow{width:225px;height:225px;left:-35px;top:-8px}
+.campaign .campaign-title{font-size:34px}.campaign .paper strong{font-size:78px}
+.campaign .paper-note{grid-row:2;width:100%;max-width:290px;margin:-20px 0 0;padding:32px 25px 23px;font-size:16px;z-index:1}
+.campaign .note-work{grid-column:1;justify-self:center;transform:rotate(-7deg);margin-left:15%}
+.campaign .note-support{grid-column:2;justify-self:center;transform:rotate(6deg);margin-right:8%;margin-top:-28px}
+/* Keep the full quote in the parchment opening, above the highest sea position. */
+.landscape{container-type:size}.cave,.sea-world{pointer-events:none}
+.sea-quote,.sea-quote.awaiting{z-index:3;top:51%;left:49%;width:25%;font-size:clamp(12px,min(2.1cqw,2.5cqh),28px);line-height:1.22;text-wrap:balance;opacity:1;transform:translate3d(0,var(--quote-y,0px),0);color:#484536;text-shadow:none}
+.sea-quote blockquote{margin:0}.sea-quote:hover{color:#713921}.sea-quote:focus-visible,.sun:focus-visible{outline-color:#8a3726}
+.sun{z-index:3;top:37%;width:8%;transition:filter .2s}.sun:hover{filter:brightness(1.12)}
+.manifesto{max-width:720px}.manifesto p{font-size:clamp(18px,2vw,22px);line-height:1.75}.manifesto .manifesto-opening{font:italic clamp(25px,3vw,38px)/1.4 Georgia,serif;color:var(--paper)}.manifesto-ending{margin-top:40px;color:#d49a72}
+@media(max-width:540px){.campaign{width:90%;gap:0 8%;padding-bottom:20px}.campaign .paper{min-height:135px;padding:20px 15px 22px 85px}.campaign .cow{width:130px;height:145px;left:-25px;top:-4px}.campaign .campaign-title{font-size:clamp(18px,5vw,27px)}.campaign .paper strong{font-size:clamp(39px,11vw,59px)}.campaign .paper-note{font-size:12px;line-height:1.3;padding:24px 13px 18px;margin-top:-16px}.campaign .note-work{margin-left:8%}.campaign .note-support{margin-top:-20px;margin-right:0}.note-work>strong{font-size:19px}.note-work>span{font-size:11px;margin-bottom:7px}.sun{top:42%;width:10%}.sea-quote,.sea-quote.awaiting{top:52%;left:48%;width:28%;font-size:clamp(12px,3.3cqw,17px);line-height:1.22}}
+@media(prefers-reduced-motion:reduce){.sea-quote,.sun{transform:none}}
+@media(min-width:1600px){.hero{aspect-ratio:auto;height:1200px;min-height:1200px;background:url('assets/roca-textura.png') center/640px repeat}.landscape{width:1600px;left:50%;right:auto;transform:translateX(-50%);mask-image:linear-gradient(to right,transparent,#000 8%,#000 92%,transparent),linear-gradient(#000 90%,transparent);mask-composite:intersect}.hero:after{content:'';position:absolute;inset:85% 0 0;pointer-events:none;background:linear-gradient(transparent,var(--ink))}.intro{left:max(8%,calc(50% - 670px))}}
+@media(max-width:540px){.sea-quote,.sea-quote.awaiting{top:49.5%;left:47%;width:31%;font-size:clamp(12px,3.3cqw,17px)}}
+/* The navigation follows the actual brand dimensions instead of hero height. */
+.shell{--brand-top:30px;--logo-width:115px;--brand-gap:12px;--caption-height:20px;--nav-gap:30px}
+.mark{top:var(--brand-top);gap:var(--brand-gap)}
+.logo-crop{width:var(--logo-width)}
+.brand-caption{line-height:var(--caption-height)}
+.intro{top:calc(var(--brand-top) + var(--logo-width) * 2448 / 1516 + var(--brand-gap) + var(--caption-height) + var(--nav-gap));left:8%}
+@media(min-width:900px){.shell{--brand-top:35px;--logo-width:125px;--nav-gap:34px}}
+@media(max-width:540px){.shell{--brand-top:18px;--logo-width:73px;--brand-gap:9px;--caption-height:17.5px;--nav-gap:28px}}
+/* Desktop has its own wide composition and a centered navigation column. */
+@media(min-width:1200px){
+ .shell{--desktop-inset:max(16%,calc((100vw - 1320px)/2));--brand-top:48px}
+ .hero{aspect-ratio:5/3;height:auto;min-height:780px;background:none}
+ .landscape{inset:0;width:100%;transform:none;mask-image:linear-gradient(#000 0%,#000 92%,transparent 100%);mask-composite:add}
+ .hero:after{display:none}
+ .mark{left:var(--desktop-inset)}
+ .intro{left:calc(var(--desktop-inset) + 10px)}
+ .menu-toggle,.header nav{right:var(--desktop-inset)}
+ .sun{top:34%;left:68%;width:6.5%}
+ .sea-quote,.sea-quote.awaiting{left:52%;top:48%;width:25%;font-size:clamp(22px,1.7vw,32px)}
+ .sea-world .diver{left:73%;top:58%;width:10%;max-width:180px}
+}
+/* Cooking collage: stronger portrait, quiet paper and clearer type. */
+.campaign .paper{padding-left:230px;min-height:215px}
+.campaign .cow{width:290px;height:290px;left:-40px;top:-55px;transform:scaleX(-1) rotate(8deg)}
+.campaign .paper-note{color:#233b2e;font-family:Georgia,serif;font-size:18px;line-height:1.45;padding:35px 25px 26px;max-width:330px}
+.paper-note:before{background:linear-gradient(#f0dfbde8,#f0dfbde8),url('assets/mar.png') 45% 12%/650%}
+.campaign .note-work>strong{font:700 34px/1.1 'Barlow Condensed',sans-serif}
+.campaign .note-work>.work-subtitle{font:italic 20px/1.2 Georgia,serif;margin:6px 0 16px;text-wrap:balance}
+.campaign .note-work p{font-size:16px}.note-support strong{font-weight:700}
+.campaign-pot{grid-column:1;grid-row:3;justify-self:center;width:210px;max-width:110%;height:auto;margin-top:-24px;z-index:3;transform:rotate(-9deg);pointer-events:none}
+.donate-cutout{grid-column:2;grid-row:3;position:relative;isolation:isolate;align-self:center;justify-self:center;display:flex;align-items:center;justify-content:center;gap:18px;width:300px;max-width:110%;padding:20px 14px;color:#f7e8c8;font:700 38px/1 'Barlow Condensed',sans-serif;text-transform:uppercase;transform:rotate(3deg);transition:transform .2s}
+.donate-cutout:before{content:'';position:absolute;inset:0;z-index:-1;background:#ead8b3;clip-path:polygon(2% 11%,12% 3%,28% 7%,42% 0,62% 5%,80% 2%,96% 10%,100% 36%,96% 55%,100% 78%,93% 94%,72% 96%,51% 92%,30% 100%,12% 93%,0 83%,4% 60%,0 38%)}
+.donate-cutout:after{content:'';position:absolute;inset:4px;z-index:-1;background:linear-gradient(#2e503aeb,#2e503aeb),url('assets/roca-textura.png') center/350px;clip-path:polygon(2% 11%,12% 3%,28% 7%,42% 0,62% 5%,80% 2%,96% 10%,100% 36%,96% 55%,100% 78%,93% 94%,72% 96%,51% 92%,30% 100%,12% 93%,0 83%,4% 60%,0 38%)}
+.donate-cutout:hover{transform:rotate(0) translateY(-3px);color:#fff4db}
+@media(max-width:540px){.campaign{column-gap:7%}.campaign .paper{padding-left:113px;padding-right:12px;min-height:150px}.campaign .cow{width:175px;height:185px;left:-28px;top:-28px}.campaign .campaign-title{font-size:clamp(17px,4.7vw,25px)}.campaign .paper strong{font-size:clamp(33px,9.7vw,52px)}.campaign .paper-note{font-size:14px;line-height:1.35;padding:25px 12px 19px}.campaign .note-work>strong{font-size:27px}.campaign .note-work>.work-subtitle{font-size:15px;line-height:1.25;margin:5px 0 12px}.campaign .note-work p{font-size:13px}.campaign-pot{width:145px;margin-top:-12px}.donate-cutout{width:170px;font-size:25px;padding:17px 10px;gap:7px}}
+@media(prefers-reduced-motion:reduce){.donate-cutout{transition:none}}
+@media(max-width:540px){.campaign .cow{width:165px;height:185px;left:-5px}.campaign .paper-note{padding-left:10px;padding-right:10px}.campaign .note-work>strong{font-size:24px;white-space:nowrap}}
+@media(max-width:540px){.campaign .paper{padding-left:130px}.campaign .campaign-title{font-size:clamp(16px,4.3vw,23px)}.campaign .paper strong{font-size:clamp(31px,9vw,48px)}}
+/* Scale the entire campaign from its own width, including intermediate screens. */
+.campaign{container-type:inline-size;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:3%;row-gap:0;max-width:780px;width:88%;padding:0 0 20px;align-items:stretch}
+.campaign .paper{width:100%;min-width:0;min-height:0;height:auto;padding:5% 5% 6% 41%;margin:0;grid-row:1;grid-column:1/-1}
+.campaign .cow{width:41%;height:auto;aspect-ratio:1;left:-1%;top:-15%;transform:scaleX(-1) rotate(8deg)}
+.campaign .campaign-title{min-width:0;font-size:clamp(13px,4cqw,31px);line-height:1.15;letter-spacing:0}
+.campaign .paper strong{font-size:clamp(28px,9.1cqw,71px);line-height:1.05;letter-spacing:0;margin-top:6px;white-space:nowrap}
+.campaign .paper-note{width:100%;max-width:none;min-width:0;margin:-10px 0 0;padding:30px 20px 38px;font:400 clamp(12px,2.25cqw,17px)/1.4 'Courier Prime',monospace;color:#243a2d}
+.campaign .note-work{justify-self:stretch;margin-left:0;transform:rotate(-5deg)}
+.campaign .note-support{justify-self:stretch;margin-right:0;margin-top:-12px;transform:rotate(4deg)}
+.paper-note:before{background:linear-gradient(#efddb944,#efddb944),url('assets/mar.png') 46% 8%/220%;background-color:#e7d3af}
+.campaign .note-work>strong{font:700 clamp(17px,3.7cqw,29px)/1.15 'Courier Prime',monospace;white-space:nowrap}
+.campaign .note-work>.work-subtitle{font:italic 400 clamp(12px,2.3cqw,18px)/1.25 'Courier Prime',monospace;margin:5px 0 12px;text-wrap:balance}
+.campaign .note-work p{font:inherit;margin:0}.campaign .note-support strong{font-weight:700}
+.campaign-pot{width:70%;max-width:230px;align-self:start;justify-self:center;margin:-42px 0 0 9%;z-index:4;transform:rotate(-9deg)}
+.donate-cutout{align-self:start;justify-self:start;width:108%;max-width:none;margin:-20px 0 0 -9%;padding:17px 10px;font-size:clamp(23px,4.5cqw,35px);gap:10px;z-index:5;transform:rotate(-3deg)}
+@media(max-width:540px){.campaign .paper-note{padding:23px 10px 32px;margin-top:-5px;line-height:1.35}.campaign .note-support{margin-top:-8px}.campaign .note-work>.work-subtitle{margin-bottom:10px}.campaign-pot{margin-top:-28px;width:83%}.donate-cutout{margin-top:-12px;padding:14px 8px;gap:4px}.campaign .cow{top:-7%}}
+footer .contact-email{flex-basis:100%;margin:4px 0 0;text-align:center;font:400 clamp(14px,2vw,17px)/1.5 'Courier Prime',monospace;user-select:text;color:var(--paper)}
+@media(max-width:540px){.donate-cutout{font-size:clamp(18px,6cqw,26px);white-space:nowrap}}
+
+/* A single layered collage, with space reserved for the oversized portrait. */
+.campaign{margin-top:clamp(100px,20vw,210px);row-gap:0;align-items:start}
+.campaign .paper{padding:6% 12% 9% 45%;min-height:0;isolation:isolate}
+.campaign .cow{position:absolute;width:55%;height:auto;left:-5%;top:0;transform:translateY(-42%) scaleX(-1) rotate(8deg);pointer-events:none}
+.campaign .campaign-title{font-size:clamp(12px,3.9cqw,30px);line-height:1.2;min-width:0}
+.campaign .paper strong{font-size:clamp(26px,8.5cqw,66px);white-space:nowrap}
+.campaign .donate-cutout{grid-column:1/-1;grid-row:2;justify-self:center;width:54%;margin:-25px 0 -25px;padding:16px 10px;font-size:clamp(20px,4.6cqw,36px);transform:rotate(-3deg);z-index:6;white-space:nowrap}
+.campaign .paper-note{grid-row:3;margin-top:0;padding-top:40px;min-width:0}
+.campaign .note-work{grid-column:1}.campaign .note-support{grid-column:2;margin-top:0}
+.campaign .campaign-pot{grid-row:4;grid-column:1;width:75%;margin-top:-30px}
+.sea-quote blockquote{font-family:'Courier Prime',monospace;font-style:normal;font-size:.8em;line-height:1.35;text-wrap:balance}
+.campaign .donate-cutout{animation:donation-sway 4.8s ease-in-out infinite}
+.campaign .donate-cutout{transition:transform .3s ease,filter .3s ease}
+.campaign .donate-cutout:hover,.campaign .donate-cutout:focus-visible{animation:none;transform:translateY(-7px) rotate(0deg) scale(1.06);filter:brightness(1.12);color:#fff4db}
+.campaign .paper{transition:transform .35s ease}
+.campaign .cow{transition:transform .45s ease;transform-origin:50% 65%}
+.campaign .paper:hover,.campaign .paper:focus-visible{transform:translateY(-6px) rotate(-5deg)}
+.campaign .paper:hover .cow,.campaign .paper:focus-visible .cow{transform:translateY(-42%) scaleX(-1) rotate(-9deg)}
+@keyframes donation-sway{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-4px) rotate(-1deg)}}
+@media(prefers-reduced-motion:reduce){.campaign .donate-cutout{animation:none}}
+@container(max-width:420px){
+ .campaign .paper-note{padding:29px 10px 29px;font-size:12px}
+ .campaign .note-work>strong{font-size:17px}
+ .campaign .note-work>.work-subtitle{font-size:12px}
+ .campaign .donate-cutout{width:57%;font-size:20px;padding:12px 8px;margin-top:-18px;margin-bottom:-18px;gap:5px}
+ .campaign .campaign-pot{margin-top:-23px}
+}
+/* Cave aperture and the mossy foreground move on independent planes. */
+.landscape .cave-opening{clip-path:polygon(0 0,100% 0,100% 66%,75% 95%,40% 84%,0 51%);transform:translateY(var(--opening-y,0px));will-change:transform}
+.landscape .cave-moss{clip-path:polygon(0 50%,40% 83%,75% 94%,100% 65%,100% 100%,0 100%);transform:translateY(var(--moss-y,0px));z-index:3;will-change:transform}
+.landscape .sea-world .diver{transform:translateY(var(--home-dive-y,0px)) rotate(-5deg);will-change:transform}
+@media(prefers-reduced-motion:reduce){.landscape .cave-opening,.landscape .cave-moss,.landscape .sea-world .diver{transform:none;will-change:auto}}
+
+.landscape:after{content:'';position:absolute;inset:auto 0 0;height:12%;background:linear-gradient(transparent,#191a16);z-index:4;pointer-events:none}
+/* Alpha follows the green moss crest; no geometric cutting of the stones. */
+.landscape .cave-opening,.landscape .cave-moss{clip-path:none}
+.landscape .cave-opening{transform:translateY(var(--opening-y,0px))}
+.landscape .cave-moss{transform:translateY(var(--moss-y,0px));height:112%;object-fit:fill;z-index:3}
+.landscape .sea-world .diver{transform:translateY(var(--home-dive-y,0px)) rotate(var(--home-dive-turn,-5deg))}
+
+/* Prominent, fully clickable practice entrances. */
+.practices{max-width:1480px;padding:65px 5% 55px;gap:28px}.practices>a{padding:14px 8px 24px;gap:16px;font-size:clamp(24px,2.25vw,34px);letter-spacing:.065em}.practices .badge{width:clamp(220px,23vw,330px)}.practices>a:hover .badge,.practices>a:focus-visible .badge{transform:translateY(-8px) scale(1.045)}.practices>a:focus-visible{outline:2px solid #ead9b6;outline-offset:5px}
+@media(max-width:650px){.practices{grid-template-columns:1fr;padding:35px 7%;gap:24px}.practices>a{display:grid;grid-template-columns:145px 1fr;gap:14px;text-align:left;font-size:24px;padding:8px 0}.practices .badge{width:145px}}
+@media(max-width:360px){.practices>a{grid-template-columns:112px 1fr;font-size:21px;gap:9px}.practices .badge{width:112px}}
+@media(prefers-reduced-motion:reduce){.practices .badge,}
