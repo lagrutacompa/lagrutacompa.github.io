@@ -1,0 +1,22 @@
+/* Reservation and contributions: preserve the photographic, paper-led composition. */
+.kitchen-editorial .hero .table-booking{position:absolute;right:6%;bottom:16%;width:28%;text-align:center;color:var(--paper)}
+.table-booking p{font:400 clamp(27px,3vw,46px)/1.15 'Kaftan',Georgia,serif;text-wrap:balance}
+.table-booking .cta{margin-top:22px;min-width:180px;background:var(--paper);color:var(--ink);font-size:24px;letter-spacing:.04em}
+.table-booking .cta:hover{background:#dfcfb5}
+.kitchen-editorial dialog{width:calc(100% - 32px);max-width:620px;max-height:calc(100dvh - 32px);overflow:auto;padding:40px;font-family:var(--editorial-body,Georgia,serif)}
+.kitchen-editorial dialog h2{font-size:clamp(28px,4vw,38px)}
+.contribution-methods{margin:0 0 22px}
+.contribution-methods>div{padding:12px 0;border-bottom:1px solid #88745d66;display:grid;grid-template-columns:105px 1fr;gap:15px}
+.contribution-methods dt{font-weight:600}
+.contribution-methods dd{margin:0;font-variant-numeric:tabular-nums}
+.contribution-owner{margin-bottom:18px}
+.kitchen-editorial #dialog-link{letter-spacing:0;font-size:21px;max-width:100%;text-align:center}
+@media(max-width:900px){
+ .kitchen-editorial.refined .hero{height:auto;min-height:650px;aspect-ratio:auto;padding:210px 6% 45px;display:flex;flex-direction:column;justify-content:flex-end;gap:30px}
+ .kitchen-editorial.refined .hero>div{position:static;width:100%}
+ .kitchen-editorial.refined .hero .table-booking{position:static;width:100%;text-align:left}
+ .kitchen-editorial.refined .hero h1{font-size:clamp(70px,13vw,115px)}
+ .kitchen-editorial .hero .table-booking p{font-size:30px}
+ .table-booking .cta{margin-top:14px}
+}
+@media(max-width:480px){.kitchen-editorial dialog{padding:36px 22px 26px}.contribution-methods>div{grid-template-columns:80px 1fr;gap:12px}.kitchen-editorial #dialog-link{padding:14px 12px;font-size:19px}}
